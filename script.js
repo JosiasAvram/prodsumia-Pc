@@ -1,3 +1,5 @@
+Swal.fire("Bienvenidos a la tienda de Prodsumia-Pc")
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carritoDeCompras')
 const botonVaciar = document.getElementById('vaciar-carrito')
@@ -31,6 +33,34 @@ stockDeProductos.forEach((producto) => {
         </div>
     </div>
     `
+
+    let btn = document.querySelector('.btn')
+
+    btn.addEventListener('click', () => {
+        Swal.fire({
+            title: 'El Carrito se vacio con exito',
+            position: 'top-end',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+    })
+
+    const contenido = document.querySelector('.contenido')
+    
+    contenido.addEventListener('click', () => {
+        Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Producto agregado al Carrito',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    })
+
     contenedorProductos.appendChild(div)
 
     const boton = document.getElementById (`agregar${producto.id}`)
