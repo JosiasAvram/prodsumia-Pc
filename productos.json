@@ -1,0 +1,80 @@
+[
+    {
+      "id": 1,
+      "nombre": "Mouse REDRAGON M607",
+      "cantidad": 1,
+      "precio": 1999,
+      "img": "./imagenes/Producto-1.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Mouse TRUST GXT 960",
+      "cantidad": 1,
+      "precio": 2590,
+      "img": "./imagenes/Producto-9.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Teclado REDRAGON SHIVA",
+      "cantidad": 1,
+      "precio": 4090,
+      "img": "./imagenes/Producto-7.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Monitor 24 ASUS",
+      "cantidad": 1,
+      "precio": 36999,
+      "img": "./imagenes/Producto-4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Auriculares REDRAGON H220",
+      "cantidad": 1,
+      "precio": 2845,
+      "img": "./imagenes/Producto-6.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Auriculares LOGITECH G G635",
+      "cantidad": 1,
+      "precio": 15999,
+      "img": "./imagenes/Producto-2.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Placa d/Video GTX 1660",
+      "cantidad": 1,
+      "precio": 66999,
+      "img": "./imagenes/Producto-8.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Placa de Video RX 6900",
+      "cantidad": 1,
+      "precio": 23999,
+      "img": "./imagenes/Producto-11.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Disco SSD 2TB M2 XPG",
+      "cantidad": 1,
+      "precio": 37999,
+      "img": "./imagenes/Producto-5.png"
+    },
+    {
+      "id": 10,
+      "nombre": "Disco SSD 240GB M2",
+      "cantidad": 1,
+      "precio": 4899,
+      "img": "./imagenes/Producto-10.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Microfono HYPERX",
+      "cantidad": 1,
+      "precio": 17490,
+      "img": "./imagenes/Producto-12.jpg"
+    }
+]
+  

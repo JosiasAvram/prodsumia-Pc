@@ -73,3 +73,13 @@ button {
     display: flex;
     justify-content: space-around;
 }
+
+.dolar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: large;
+}
+h2{
+    text-align: center;
+}
