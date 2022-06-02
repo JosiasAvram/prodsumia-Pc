@@ -1,10 +1,12 @@
-Swal.fire("Bienvenidos a la tienda de Prodsumia-Pc")
+//Swal.fire("Bienvenidos a la tienda de Prodsumia-Pc")
 
 const contenedorProductos = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carritoDeCompras')
 const botonVaciar = document.getElementById('vaciar-carrito')
 const contadorCarrito = document.getElementById('contadorCarrito')
 const precioToral = document.getElementById('precioTotal')
+const confirmCompra = document.querySelector(`#comprarCarrito`);
+
 
 fetch('productos.json')
 .then(response => response.json())
@@ -62,13 +64,6 @@ stockDeProductos.forEach((producto) => {
 
 let carrito = []
 
-document.addEventListener('DOMContenetLoaded', () => {
-    if (localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
-})
-
 const agregarAlCarrito = (prodId) => {
     const existe = carrito.some (prod => prod.id === prodId)
 
@@ -113,12 +108,43 @@ eliminarDelCarrito = (prodId) => {
     const item =carrito.find((prod) => prod.id === prodId)
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
+    localStorage.clear();
     actualizarCarrito()
 }
 
 botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
+    carrito.length = [];
+    localStorage.clear();
     actualizarCarrito()
 })
 
+confirmCompra.addEventListener('click', () => {
+    if (localStorage.getItem('carrito') == null || carrito.length == 0) {
+        Swal.fire('No hay productos en el carrito', '', 'warning')
+    } else {
+        Swal.fire({
+            title: '¿Esta seguro de realizar la compra?',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Realizar compra!'
+        }).then((result) => {
+            if (result.value) {
+                Swal.fire(
+                    'Compra realizada!',
+                    'Vuelva Pronto',
+                    'success'
+                )
+                carrito.length = [];
+                localStorage.clear();
+                actualizarCarrito()
+                }
+        })
+    }
+});
+
+if (localStorage.getItem('carrito')){
+    carrito = JSON.parse(localStorage.getItem('carrito'))
+    actualizarCarrito()
+    }
 })

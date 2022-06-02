@@ -14,7 +14,7 @@
 .titulo {
     margin: 20px;
     font-family: 'Comic Neue', cursive;
-    text-decoration: solid;
+    font-weight: bold;
 }
 
 .buttonPagar:hover {
@@ -66,20 +66,79 @@ button {
 .bi{
     color: red;
 }
+
 .carro {
-    font-size: 35px;
+    font-size: 30px;
+    padding-right: 10px;
 }
+
 .productoEnCarrito {
     display: flex;
     justify-content: space-around;
 }
 
-.dolar {
-    display: flex;
-    justify-content: space-between;
+.facturacion {
+    font-family: 'Comic Neue', cursive;
+    font-size: xx-large;
     font-weight: bold;
-    font-size: large;
-}
-h2{
     text-align: center;
+    margin-top: 10px;
+}
+
+.datos{
+    margin: 0px 250px 0px 250px;
+    padding: 15px;
+    border: solid
+}
+.mediosDePago{
+    align-items:  center;
+}
+
+.finCompra {
+    font-family: 'Comic Neue', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tartejaEfectivo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.efectivo {
+    font-family: 'Comic Neue', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: solid;
+    padding: 25px;
+    background-color: white;
+
+}
+
+.tarteja {
+    font-family: 'Comic Neue', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: solid;
+    padding: 30px;
+    background-color: white;
+
+
+}
+
+.monto {
+    font-family: 'Comic Neue', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+    border: solid;
+    padding: 10px;
+    background-color: white;
+
 }
